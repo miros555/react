@@ -1,0 +1,63 @@
+
+miros555
+Vbhjckfx5
+
+https://github.com/miros555/react.git
+
+
+$ git config user.name "miros555"
+$ git config --global user.email "m5b@ukr.net"
+
+(copy some repository)
+git clone https://github.com/vipod/wxpython_calculator.git
+
+Створюємо локально папочку, заходимо всередину та ініціалізуємо її як git репозиторій:
+
+# створюю папку
+$ mkdir myrepo
+# заходжу в папку
+$ cd myrepo
+# ініціюю її як git репозиторій
+$ git init
+
+
+Команда git add додасть рекурсивно усі файли та підпапки даної папки.
+git add *
+
+
+
+$ git status
+# On branch master
+# Changed but not updated:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   calculator.py
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	test.txt
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+$ git add calculator.py test.txt
+$ git commit -m 'initial code version'
+
+	
+$ git commit -a -m 'fix issue #132'
+
+
+$ git add test.txt
+
+$ git rm removed_file.txt
+
+
+$ git push origin master
+
+$ git remote add origin http://your-git-server.com/some_repository_name
+$ git push origin master
+
+
+
+
